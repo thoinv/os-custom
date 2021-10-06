@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="bottom" android:orientation="vertical" android:layout_width="60dp" android:layout_height="100dp">
+    <com.quvideo.xiaoying.templatex.view.TemplateRoundRelativeLayout android:id="@+id/normal_content_layout" android:layout_width="60dp" android:layout_height="80dp">
+        <View android:background="#525252" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:id="@+id/msv_reset_img" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="17dp" android:src="@drawable/editorx_more_source_reset_img" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/white" android:id="@+id/msv_more_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/xiaoying_str_com_more" android:layout_below="@+id/msv_reset_img" android:layout_centerHorizontal="true"/>
+    </com.quvideo.xiaoying.templatex.view.TemplateRoundRelativeLayout>
+</LinearLayout>

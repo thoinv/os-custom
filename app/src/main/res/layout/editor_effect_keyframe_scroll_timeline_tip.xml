@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center" android:id="@+id/txt_layout" android:background="@drawable/xyui_bg_help_pop_left_up" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="12sp" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@+id/tv_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xiaoying_str_help_add_new_keyframe" android:includeFontPadding="false" android:drawableRight="@drawable/editor_btn_hide_keyframe_move_to_add_tip" android:drawablePadding="5dp" android:drawableEnd="@drawable/editor_btn_hide_keyframe_move_to_add_tip"/>
+    </RelativeLayout>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22dp" android:layout_marginTop="8dp" android:src="@drawable/editor_btn_move_to_add_keyframe" android:layout_below="@+id/txt_layout" android:layout_marginStart="22dp"/>
+</RelativeLayout>

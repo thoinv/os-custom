@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/main_layout" android:background="@color/veds_color_bg_black_3" android:layout_width="wrap_content" android:layout_height="44dp" android:paddingStart="0dp" android:paddingEnd="10dp">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textColor="@color/veds_color_fill_white_3" android:layout_gravity="center_vertical" android:id="@+id/tv_tab" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textDirection="locale" android:paddingStart="5dp" android:paddingEnd="5dp" style="@style/veds_latn_font_body_14"/>
+        <View android:layout_gravity="center_vertical" android:id="@+id/view_line" android:background="@color/veds_color_fill_white_4" android:visibility="gone" android:layout_width="1dp" android:layout_height="8dp" android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="right" android:id="@+id/ivVip" android:paddingBottom="15dp" android:layout_width="14dp" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+    <View android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/view_tab" android:background="@drawable/editorx_shape_effect_select_tab_bg" android:visibility="gone" android:layout_width="8dp" android:layout_height="2dp" android:layout_marginBottom="7dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#141414" android:clickable="true" android:layout_width="match_parent" android:layout_height="190dp">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center_horizontal" android:id="@+id/cl_high_level" android:background="@drawable/editorx_kit_clip_function_bg" android:layout_width="wrap_content" android:layout_height="38dp" android:layout_marginTop="24dp">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_kit_clip_trim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="24dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintHorizontal_chainStyle="2" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@+id/v_kit_function" app:layout_constraintTop_toTopOf="0">
+            <ImageView android:id="@+id/iv_kit_clip_trim" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/editorx_kit_clip_trim"/>
+            <TextView android:textSize="16sp" android:textColor="#e6e6e6" android:id="@+id/tv_kit_clip_trim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xiaoying_str_ve_gallery_preview_trim" android:layout_marginStart="6dp"/>
+        </LinearLayout>
+        <View android:id="@+id/v_kit_function" android:background="#363636" android:layout_width="1dp" android:layout_height="12dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintHorizontal_chainStyle="2" app:layout_constraintLeft_toRightOf="@+id/ll_kit_clip_trim" app:layout_constraintRight_toLeftOf="@+id/ll_kit_clip_replace" app:layout_constraintTop_toTopOf="0"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_kit_clip_replace" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="24dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintHorizontal_chainStyle="2" app:layout_constraintLeft_toRightOf="@+id/v_kit_function" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+            <ImageView android:id="@+id/iv_kit_clip_replace" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/editorx_kit_clip_replace"/>
+            <TextView android:textSize="16sp" android:textColor="#e6e6e6" android:id="@+id/tv_kit_clip_replace" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xiaoying_str_editor_sticker_add_replace" android:layout_marginStart="6dp"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.quvideo.xiaoying.supertimeline.view.KitTimeLine android:id="@+id/kitTimeline" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

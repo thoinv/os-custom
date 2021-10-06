@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/veds_color_bg_black_3" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/layout_empty" android:background="@drawable/editorx_shape_dash_bg_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:layout_marginStart="15dp" android:layout_marginEnd="15dp">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/layoutEmpty" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+            <View android:background="@drawable/editorx_shape_dash_bg_latest" android:layout_width="70dp" android:layout_height="70dp"/>
+            <View android:background="@drawable/editorx_shape_dash_bg_latest" android:layout_width="70dp" android:layout_height="70dp" android:layout_marginStart="12dp"/>
+            <View android:background="@drawable/editorx_shape_dash_bg_latest" android:layout_width="70dp" android:layout_height="70dp" android:layout_marginStart="12dp"/>
+            <View android:background="@drawable/editorx_shape_dash_bg_latest" android:layout_width="70dp" android:layout_height="70dp" android:layout_marginStart="12dp"/>
+        </LinearLayout>
+        <TextView android:textColor="@color/veds_color_fill_white_4" android:gravity="center" android:id="@+id/recent_empty" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:text="@string/xiaoying_str_editorx_recent_use" android:layout_below="@+id/layoutEmpty" android:layout_centerHorizontal="true" android:layout_marginStart="15dp" android:layout_marginEnd="15dp" style="@style/veds_latn_font_body_14"/>
+    </RelativeLayout>
+</RelativeLayout>

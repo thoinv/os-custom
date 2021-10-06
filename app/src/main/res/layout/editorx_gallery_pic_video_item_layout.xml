@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/layout_main" android:background="@drawable/editorx_shape_effect_item_bg_unchoose_noradius" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout_other" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_width="52dp" android:layout_height="32dp" android:src="@drawable/editorx_ico_effect_other_album" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+        <TextView android:textSize="10sp" android:textColor="@color/color_808080" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/xiaoying_effect_collage_album" android:maxLines="1"/>
+    </LinearLayout>
+    <com.quvideo.mobile.component.imageview.DynamicLoadingImageView android:id="@+id/iv_photo" android:background="@color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:layout_centerInParent="true"/>
+    <TextView android:textSize="10sp" android:textColor="@color/white" android:id="@+id/tv_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:layout_alignParentBottom="true" android:layout_marginStart="6dp"/>
+    <View android:id="@+id/layout_choose" android:background="@drawable/editorx_shape_effect_item_bg_noradius_unchoose" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

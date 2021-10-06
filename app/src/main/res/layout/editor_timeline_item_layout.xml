@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/layout_imgview_bg" android:layout_width="@dimen/d_45dp" android:layout_height="@dimen/d_45dp">
+        <ImageView android:id="@+id/imgview_thumbnail" android:layout_width="@dimen/d_45dp" android:layout_height="@dimen/d_45dp" android:src="@drawable/xiaoying_com_time_line_default_thumb" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+</RelativeLayout>

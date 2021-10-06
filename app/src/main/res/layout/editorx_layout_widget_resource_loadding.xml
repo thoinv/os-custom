@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.quvideo.xiaoying.editorx.widget.LoadingImageView android:id="@+id/wrl_icon" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/editorx_icon_widget_loadding_progress" android:scaleType="centerCrop" android:layout_centerInParent="true"/>
+</merge>

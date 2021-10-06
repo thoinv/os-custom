@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/mainLayout" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.quvideo.xiaoying.editorx.board.effect.ui.SimpleIconTextView android:layout_gravity="center" android:id="@+id/sitv_reset" android:visibility="gone" android:layout_width="64dp" android:layout_height="match_parent" android:layout_centerVertical="true" android:layout_marginEnd="15dp" android:layout_alignParentEnd="true" app:sitv_bottom_text="@string/xiaoying_str_edit_reset_text" app:sitv_top_drawable="@drawable/editorx_ico_effect_reset"/>
+    <com.quvideo.xiaoying.editorx.widget.trimBar.TrimBarView android:id="@+id/trim_bar_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="36dp" android:layout_marginBottom="60dp" android:layout_alignParentBottom="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_expand" android:background="@drawable/editorx_shape_expand_bg" android:layout_width="match_parent" android:layout_height="320dp" android:layout_alignParentBottom="true">
+        <com.quvideo.xiaoying.xyui.view.CustomHandleView android:id="@+id/chv_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:chv_title_text="@string/xiaoying_str_editor_sticker_title"/>
+        <com.quvideo.xiaoying.editorx.board.effect.ui.effectTab.EffectTabView android:id="@+id/etv_tab" android:layout_width="match_parent" android:layout_height="44dp"/>
+        <View android:id="@+id/line" android:background="@color/veds_color_bg_dividing_100" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="3dp"/>
+        <com.quvideo.xiaoying.common.ui.RtlViewPager android:id="@+id/view_pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <include android:id="@+id/layout_second" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignParentBottom="true" layout="@layout/editorx_effect_layout_second"/>
+</RelativeLayout>

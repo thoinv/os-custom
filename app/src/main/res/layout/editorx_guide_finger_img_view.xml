@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatImageView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/gv_finger_img" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/editorx_selector_guide_finger" android:scaleType="centerCrop" android:layout_alignParentLeft="true"/>

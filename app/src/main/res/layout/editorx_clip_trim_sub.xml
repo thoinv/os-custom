@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="bottom" android:id="@+id/content_layout" android:clickable="true" android:layout_width="match_parent" android:layout_height="240dp">
+        <com.quvideo.xiaoying.xyui.view.CustomHandleView android:id="@+id/handle" android:layout_width="match_parent" android:layout_height="wrap_content" app:chv_title_text="@string/xiaoying_str_edit_clip_trim" app:layout_constraintTop_toTopOf="0"/>
+        <View android:id="@+id/viewContentBg" android:background="@color/veds_color_bg_black_3" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/handle"/>
+        <com.quvideo.xiaoying.timeline.fixed.trim.MultiTrimTimeline android:id="@+id/trimTimeline" android:layout_width="match_parent" android:layout_height="130dp" android:layout_marginBottom="20dp" app:layout_constraintBottom_toTopOf="@+id/selectTabView" app:ttl_marginTop="0dp"/>
+        <com.quvideo.xiaoying.editorx.board.clip.widget.TrimSelectTabView android:id="@+id/selectTabView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

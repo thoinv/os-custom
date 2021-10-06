@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rl_kit_backdoor_root"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#4400ffff"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_kit_backdoor_jump"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="50dp"
+                android:background="#f00"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="jump kit"
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="0"
+                app:layout_constraintTop_toTopOf="0" />
+
+            <TextView
+                android:id="@+id/tv_kit_backdoor_export"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:background="#f00"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="export"
+                android:textColor="#000"
+                app:layout_constraintEnd_toEndOf="0"
+                app:layout_constraintTop_toTopOf="0" />
+
+            <TextView
+                android:id="@+id/tv_kit_backdoor_clip_lock"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="#f00"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="lock"
+                android:textColor="#000"
+                app:layout_constraintEnd_toEndOf="0"
+                app:layout_constraintTop_toTopOf="@+id/tv_kit_backdoor_clip_info" />
+
+            <TextView
+                android:id="@+id/tv_kit_backdoor_clip_info"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="#222"
+                android:gravity="left|center_vertical|center_horizontal|center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="#fff"
+                app:layout_constraintEnd_toStartOf="@+id/tv_kit_backdoor_clip_lock"
+                app:layout_constraintStart_toStartOf="0"
+                app:layout_constraintTop_toBottomOf="@+id/tv_kit_backdoor_jump" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/v_kit_backdoor_switch"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#f00"
+            android:gravity="center"
+            android:text="Q"
+            android:textColor="#000" />
+    </RelativeLayout>
+</FrameLayout>

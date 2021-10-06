@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr">
+    <RelativeLayout android:gravity="center" android:id="@+id/top_left" android:background="@drawable/editorx_selector_text_quick_position_bg" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginStart="10dp">
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/editorx_btn_text_quick_position_top_left"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/top_right" android:background="@drawable/editorx_selector_text_quick_position_bg" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_marginEnd="10dp" android:layout_alignParentEnd="true">
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/editorx_btn_text_quick_position_top_left" android:rotation="90"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/bottom_left" android:background="@drawable/editorx_selector_text_quick_position_bg" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="10dp" android:layout_marginBottom="10dp" android:layout_alignParentBottom="true" android:layout_marginStart="10dp">
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/editorx_btn_text_quick_position_top_left" android:rotation="270"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/bottom_right" android:background="@drawable/editorx_selector_text_quick_position_bg" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_marginEnd="10dp" android:layout_alignParentEnd="true">
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/editorx_btn_text_quick_position_top_left" android:rotation="180"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/center_left" android:background="@drawable/editorx_selector_text_quick_position_bg" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="10dp" android:layout_centerVertical="true" android:layout_marginStart="10dp">
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/editorx_btn_text_quick_position_center_left"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/center_right" android:background="@drawable/editorx_selector_text_quick_position_bg" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="10dp" android:layout_alignParentEnd="true">
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/editorx_btn_text_quick_position_center_left" android:rotation="180"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/center_top" android:background="@drawable/editorx_selector_text_quick_position_bg" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginTop="10dp" android:layout_centerHorizontal="true">
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/editorx_btn_text_quick_position_center_left" android:rotation="90"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/center_bottom" android:background="@drawable/editorx_selector_text_quick_position_bg" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginBottom="10dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/editorx_btn_text_quick_position_center_left" android:rotation="270"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/center" android:background="@drawable/editorx_selector_text_quick_position_bg" android:layout_width="40dp" android:layout_height="40dp" android:layout_centerInParent="true">
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/editorx_btn_text_quick_position_center"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/line_horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@drawable/editorx_shape_text_quick_position_divider" android:showDividers="middle">
+        <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/line_vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@drawable/editorx_shape_text_quick_position_divider_horizontal" android:showDividers="middle">
+        <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

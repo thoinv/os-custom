@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_click" android:background="@color/color_141414" android:layout_width="match_parent" android:layout_height="192dp">
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/color_808080" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="@string/xiaoying_str_edit_effect_suntitle_font_animation_in" android:layout_marginStart="15dp"/>
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/editorx_shape_subtitle_font_shadow" android:layout_width="match_parent" android:layout_height="28dp" android:layout_marginTop="16dp" android:layout_marginStart="15dp" android:layout_marginEnd="15dp">
+            <Button android:textSize="12sp" android:textColor="@color/color_363636" android:id="@+id/btn_off" android:background="@drawable/editorx_shape_subtitle_shadow_unchoose" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/xiaoying_str_com_state_off" android:layout_weight="1"/>
+            <Button android:textSize="12sp" android:textColor="@color/color_363636" android:id="@+id/btn_on" android:background="@drawable/editorx_shape_subtitle_shadow_choose" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/xiaoying_str_edit_effect_suntitle_font_shadow_on" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

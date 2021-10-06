@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/anim_state_loading" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/editorx_effect_text_anim_loading_icon" android:scaleType="centerCrop" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/anim_state_fail" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="18sp" android:textColor="@color/color_edeff5" android:id="@+id/annim_state_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xiao_str_text_network_title"/>
+        <TextView android:textSize="12sp" android:textColor="@color/color_525252" android:id="@+id/annim_state_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/xiaoying_str_network_des"/>
+        <TextView android:textSize="12sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/annim_state_retry" android:background="@drawable/editorx_effect_text_anim_retry_shape" android:layout_width="wrap_content" android:layout_height="32dp" android:layout_marginTop="24dp" android:text="@string/xiaoying_str_network_retry" android:paddingStart="12dp" android:paddingEnd="12dp"/>
+    </LinearLayout>
+</merge>

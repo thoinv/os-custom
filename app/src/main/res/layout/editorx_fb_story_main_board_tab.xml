@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:paddingBottom="32dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/editorx_fb_story_speed_icon"/>
+        <TextView android:textColor="@color/veds_color_fill_white_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/xiaoying_str_ve_basic_speed_tool_title" style="@style/veds_latn_font_subtitle_12"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/editorx_fb_story_duration_icon"/>
+        <TextView android:textColor="@color/veds_color_fill_white_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/xiaoying_str_ve_img_duration_title" style="@style/veds_latn_font_subtitle_12"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_trim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="24dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toEndOf="@+id/ll_speed">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/editorx_fb_story_trim_icon"/>
+        <TextView android:textColor="@color/veds_color_fill_white_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/xiaoying_str_ve_split_clip_title" style="@style/veds_latn_font_subtitle_12"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="24dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toEndOf="@+id/barrier">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/editorx_fb_story_filter_icon"/>
+        <TextView android:textColor="@color/veds_color_fill_white_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/xiaoying_str_ve_animate_frame_title" style="@style/veds_latn_font_subtitle_12"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_canvas" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="24dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toEndOf="@+id/ll_filter">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/editorx_fb_story_canvas_icon"/>
+        <TextView android:textColor="@color/veds_color_fill_white_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/xiaoying_str_ve_fb_canvas" style="@style/veds_latn_font_subtitle_12"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_next" android:background="@drawable/editorx_fb_story_next_bg" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="16dp" app:layout_constraintBottom_toBottomOf="@+id/ll_canvas" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="@+id/ll_canvas">
+        <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/editorx_fb_story_fb_icon" android:layout_marginStart="12dp" android:layout_marginEnd="4dp"/>
+        <TextView android:textColor="@color/veds_color_bg_black_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xiaoying_str_com_next_step_title" android:layout_marginEnd="12dp" style="@style/veds_latn_font_subtitle_16"/>
+    </LinearLayout>
+    <androidx.constraintlayout.widget.Group android:id="@+id/group_video_tab" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:constraint_referenced_ids="ll_speed, ll_trim"/>
+    <androidx.constraintlayout.widget.Group android:id="@+id/group_image_tab" android:layout_width="wrap_content" android:layout_height="wrap_content" app:constraint_referenced_ids="ll_duration"/>
+    <androidx.constraintlayout.widget.Barrier android:id="@+id/barrier" android:layout_width="wrap_content" android:layout_height="wrap_content" app:barrierDirection="1" app:constraint_referenced_ids="ll_duration, ll_speed, ll_trim"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

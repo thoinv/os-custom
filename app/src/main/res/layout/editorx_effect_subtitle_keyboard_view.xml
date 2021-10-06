@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <EditText android:textSize="14sp" android:textColor="@color/veds_color_fill_white_1" android:textColorHint="@color/veds_color_fill_white_4" android:gravity="center_vertical" android:id="@+id/et_edit" android:background="@drawable/editorx_shape_effect_subtitle_input2" android:paddingTop="9dp" android:paddingBottom="9dp" android:focusable="true" android:focusableInTouchMode="false" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="59dp" android:minHeight="36dp" android:maxLength="247" android:textCursorDrawable="@drawable/editorx_cursor_bg" android:paddingStart="12dp" android:paddingEnd="13dp" android:layout_marginStart="24dp" android:layout_marginEnd="15dp"/>
+</merge>

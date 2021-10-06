@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/editorx_fb_story_tip_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="40dp" android:layout_marginEnd="40dp">
+        <TextView android:textColor="@color/veds_color_fill_white_1" android:id="@+id/tv_tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:text="@string/xiaoying_str_fb_editor_export_overDuration" android:textAlignment="center" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" style="@style/veds_latn_font_headline_20"/>
+        <TextView android:textColor="@color/veds_color_fill_orange_50" android:layout_gravity="center_horizontal" android:id="@+id/tv_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="36dp" android:layout_marginBottom="14dp" android:text="@string/xiaoying_str_com_invite_community_ok" android:textAlignment="center" style="@style/veds_latn_font_button_16"/>
+    </LinearLayout>
+</FrameLayout>

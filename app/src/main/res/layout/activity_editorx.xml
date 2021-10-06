@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_0a0a0a">
+
+    <FrameLayout
+        android:id="@+id/flPlayerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="290dp">
+
+        <com.quvideo.xiaoying.editorx.player.EditorPlayerView
+            android:id="@+id/epv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top" />
+
+        <ImageView
+            android:id="@+id/shot_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:visibility="gone" />
+
+        <com.quvideo.xiaoying.editorx.controller.vip.InTrialView
+            android:id="@+id/try2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+
+        <com.quvideo.xiaoying.editorx.widget.SmallProgressView
+            android:id="@+id/small_progress_view"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/shot_timeline"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/super_timeline_height"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/board_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/title_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/ll_vip_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_vip_bottom_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="124"
+            android:background="@color/color_212121"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/xiaoying_str_cam_effect_backout"
+            android:textColor="@color/color_99ffffff"
+            android:textSize="15dp" />
+
+        <FrameLayout
+            android:id="@+id/fl_vip_bottom_sure"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="251"
+            android:background="@drawable/iap_vip_shape_btn_bttom_bevip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:drawableEnd="@drawable/iap_vip_icon_arraw_vip_bottom"
+                android:drawableRight="@drawable/iap_vip_icon_arraw_vip_bottom"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:text="@string/xiaoying_str_vip_be_vip"
+                android:textColor="@color/color_333333"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlFakePlayProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="282dp">
+
+        <View
+            android:id="@+id/v_fake_touch_play"
+            android:layout_width="48dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp" />
+
+        <com.quvideo.xiaoying.editorx.player.SmallProgressTouchView
+            android:id="@+id/sptv_fake_touch_progress"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_exit_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rl_button_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp">
+
+            <LinearLayout
+                android:id="@+id/ll_save_exit"
+                android:layout_width="180dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/editorx_shape_main_exit_save"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="16dp"
+                    android:scaleType="center"
+                    android:src="@drawable/editorx_main_icon_exit_save" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/xiaoying_str_save_and_exit"
+                    android:textColor="#ff333333"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_just_exit"
+                android:layout_width="180dp"
+                android:layout_height="52dp"
+                android:layout_below="@+id/ll_save_exit"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/editorx_shape_main_exit"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="16dp"
+                    android:scaleType="center"
+                    android:src="@drawable/editorx_main_icon_exit" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/xiaoying_str_editor_back_exit_directly"
+                    android:textColor="#ffffffff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/fl_real_exit"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_below="@+id/ll_save_exit"
+                android:layout_alignEnd="@+id/ll_save_exit"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/editorx_shape_main_exit"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:src="@drawable/exitorx_do_exit_btn"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ViewStub
+        android:id="@+id/vs_forced_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/editor_x_forced_guide" />
+
+    <ViewStub
+        android:id="@+id/vs_tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/editorx_kit_tool_layout" />
+
+    <FrameLayout
+        android:id="@+id/fragment_music_continer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

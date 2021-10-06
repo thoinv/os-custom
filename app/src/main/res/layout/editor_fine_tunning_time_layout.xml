@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/xiaoying_relativelayout_fine_tunning_tip"
+    android:layout_width="@dimen/xiaoying_fine_tunning_time_layout_width"
+    android:layout_height="@dimen/xiaoying_fine_tunning_time_layout_height"
+    android:background="@drawable/xiaoying_ve_pick_file_fine_adjust_bg">
+
+    <TextView
+        android:id="@+id/xiaoying_txtview_relative_timespan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:padding="1dp"
+        android:text="+ 6.5"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/xiaoying_txtview_actual_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:padding="1dp"
+        android:text="00:15.3"
+        android:textColor="#ffcccccc"
+        android:textSize="16sp" />
+</RelativeLayout>

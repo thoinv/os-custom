@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/order_scene_group_order" android:background="@drawable/editorx_shape_order_scene_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="72dp" app:layout_constraintBottom_toBottomOf="0">
+        <com.quvideo.xiaoying.xyui.view.CustomHandleView android:id="@+id/order_scene_title" android:layout_width="match_parent" android:layout_height="wrap_content" app:chv_title_text="@string/xiaoying_str_edit_clip_sort"/>
+        <FrameLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/group_delete_scene" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0" android:elevation="3dp">
+            <ImageView android:layout_width="179dp" android:layout_height="44dp" android:src="@drawable/super_timeline_delete_n"/>
+            <ImageView android:layout_gravity="center" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/editorx_main_icon_exit"/>
+        </FrameLayout>
+        <com.quvideo.xiaoying.editorx.board.clip.order.OutTouchRecycler android:layout_gravity="center_horizontal" android:id="@+id/rv_order_scene" android:clickable="false" android:longClickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="3dp" android:layout_marginTop="72dp" android:layout_marginRight="3dp" android:layout_marginStart="3dp" android:layout_marginEnd="3dp" android:elevation="5dp" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" app:spanCount="4"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/order_scene_layout_hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" app:layout_constraintBottom_toBottomOf="@+id/order_scene_group_order" app:layout_constraintStart_toStartOf="@+id/order_scene_group_order">
+        <ImageView android:id="@+id/order_scene_hint_icon" android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/editorx_clip_order_scene_hint_icon" android:layout_marginStart="16dp"/>
+        <TextView android:textColor="@color/veds_color_fill_white_4" android:ellipsize="end" android:id="@+id/order_scene_hint_text" android:paddingRight="15dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/xiaoying_str_edit_clip_sort_tip" android:lines="1" android:layout_weight="1" android:layout_marginStart="4dp" style="@style/veds_latn_font_body_12"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/group_watermark_root"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/editorx_drawer_bg"
+        android:clickable="true">
+
+        <com.quvideo.xiaoying.xyui.view.CustomHandleView
+            android:id="@+id/handle_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:chv_title_text="@string/xiaoying_str_edit_clip_watermark"
+            app:layout_constraintStart_toStartOf="0"
+            app:layout_constraintTop_toTopOf="0" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_watermark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintTop_toBottomOf="@+id/handle_view"
+            app:spanCount="4" />
+
+        <RelativeLayout
+            android:id="@+id/rl_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/rv_watermark">
+
+            <TextView
+                android:id="@+id/tv_alpha"
+                style="@style/veds_latn_font_subtitle_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/xiaoying_str_edit_clip_alpha"
+                android:textColor="@color/veds_color_fill_white_2" />
+
+            <TextView
+                android:id="@+id/tv_seekbar_value"
+                style="@style/veds_latn_font_subtitle_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:textColor="@color/veds_color_fill_white_1" />
+
+            <com.quvideo.xiaoying.editorx.widget.seekbar.SlenderSeekBar
+                android:id="@+id/seek_bar"
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="44dp"
+                android:layout_toRightOf="@+id/tv_alpha"
+                app:ssb_bg_color="@color/veds_color_bg_schedule_1"
+                app:ssb_bg_radius="4dp"
+                app:ssb_max_progress="100"
+                app:ssb_progress="100"
+                app:ssb_progress_color="@color/veds_color_fill_white_1"
+                app:ssb_thumb_color="@color/veds_color_fill_white_1"
+                app:ssb_thumb_radius="16dp"
+                app:ssb_type="0" />
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

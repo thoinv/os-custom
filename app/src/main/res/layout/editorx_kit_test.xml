@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <EditText android:id="@+id/zip_path" android:layout_width="match_parent" android:layout_height="100dp" android:text="/sdcard/XiaoYing/kittool/1584015431200.zip" android:hint="输入zip地址"/>
+    <Button android:id="@+id/bt_zip" android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginTop="100dp" android:text="启动"/>
+    <Button android:id="@+id/bt_h5" android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginTop="250dp" android:text="h5"/>
+</LinearLayout>

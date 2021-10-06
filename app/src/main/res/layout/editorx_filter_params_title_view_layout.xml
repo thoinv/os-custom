@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="14sp" android:textColor="@color/editorx_selector_recent_text_color" android:gravity="center" android:id="@+id/tv_title" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xiaoying_str_param_adjust_title" android:layout_centerInParent="true" android:paddingStart="12dp" android:paddingEnd="12dp" app:autoSizeMaxTextSize="@dimen/editorx_template_group_normal_textsize" app:autoSizeMinTextSize="@dimen/editorx_template_group_tiny_textsize" app:autoSizeTextType="1"/>
+    <ImageView android:id="@+id/iv_params_vip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/editorx_vip_icon2" android:layout_alignTop="@+id/tv_title" android:layout_alignEnd="@+id/tv_title"/>
+</RelativeLayout>

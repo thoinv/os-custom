@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="32dp" android:paddingEnd="32dp">
+    <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:text="@string/xiaoying_str_prj_delete_title"/>
+    <TextView android:textSize="16sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/xiaoying_str_prj_delete_desc"/>
+    <TextView android:textSize="18sp" android:textColor="@color/color_ff6333" android:id="@+id/tvKnow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="47dp" android:layout_marginBottom="15dp" android:text="@string/xiaoying_str_com_got_it"/>
+</LinearLayout>

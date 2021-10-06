@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/veds_color_bg_black_3" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHeight_percent="0.875" app:layout_constraintStart_toStartOf="0" app:layout_constraintVertical_bias="0">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <FrameLayout android:id="@+id/cover_player_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.quvideo.xiaoying.editorx.board.clip.fullscreen.PlayerForeColorView android:id="@+id/cover_player_force_color_view" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <TextView android:textColor="@color/veds_color_fill_white_2" android:layout_gravity="center_horizontal" android:id="@+id/cover_hint_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="8dp" android:text="@string/xiaoying_str_select_cover_swipe_desc" android:layout_marginStart="15dp" android:layout_marginEnd="15dp" style="@style/veds_latn_font_body_12"/>
+    <FrameLayout android:id="@+id/cover_timeline_container" android:layout_width="match_parent" android:layout_height="102dp"/>
+</LinearLayout>

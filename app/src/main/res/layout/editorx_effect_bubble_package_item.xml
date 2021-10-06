@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:attr="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_main_layout" android:layout_width="75dp" android:layout_height="75dp" android:layout_centerVertical="true">
+        <com.quvideo.mobile.component.imageview.DynamicLoadingImageView android:id="@+id/div_bubble_thumb" android:layout_width="65dp" android:layout_height="65dp" android:layout_centerInParent="true" attr:actualImageScaleType="5" attr:roundedCornerRadius="2dp"/>
+        <ImageView android:id="@+id/iv_filter_focus" android:layout_width="70dp" android:layout_height="70dp" android:src="@drawable/editorx_shape_effect_bubble_selected" android:layout_centerInParent="true"/>
+        <com.quvideo.mobile.component.imageview.DynamicLoadingImageView android:id="@+id/div_download_progress" android:layout_width="20dp" android:layout_height="20dp" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/iv_new_flag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:src="@drawable/editorx_icon_effect_bubble_new" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+        <ImageView android:id="@+id/iv_download_flag" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:src="@drawable/editorx_icon_effect_bubble_download" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true"/>
+        <ImageView android:id="@+id/iv_lock_flag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:src="@drawable/editorx_icon_effect_bubble_lock" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</RelativeLayout>

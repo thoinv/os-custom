@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/veds_color_bg_black_3" android:layout_width="match_parent" android:layout_height="44dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toStartOf="@+id/layout_choose_bg">
+        <ImageView android:id="@+id/iv_store" android:background="@drawable/editorx_shape_effect_store_bg" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="40dp" android:layout_height="28dp" android:src="@drawable/editorx_icon_effect_store" android:layout_marginStart="16dp"/>
+        <View android:id="@+id/view_line" android:background="@color/color_33e6e6e6" android:visibility="gone" android:layout_width="1dp" android:layout_height="16dp" android:layout_marginStart="15dp"/>
+        <com.quvideo.xiaoying.editorx.widget.viewpager.RecyclerIndicatorView android:id="@+id/rlv_indicator" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="15dp"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/layout_choose_bg" android:background="@color/color_0a0a0a" android:visibility="gone" android:layout_width="54dp" android:layout_height="match_parent" android:layout_centerVertical="true" android:layout_marginEnd="15dp" android:layout_alignParentEnd="true">
+        <RelativeLayout android:id="@+id/layout_choose_finish" android:background="@drawable/editorx_shape_effect_bg_choose_finish" android:layout_width="48dp" android:layout_height="28dp" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <ImageView android:id="@+id/iv_choose_finish" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/editorx_icon_effect_choose_finish" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:background="@drawable/editorx_shape_tab_view_shadow" android:visibility="gone" android:layout_width="29dp" android:layout_height="match_parent" android:layout_toStartOf="@+id/layout_choose_bg"/>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/editorx_shape_effect_item_bg_unchoose_noradius" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.quvideo.mobile.component.imageview.DynamicLoadingImageView android:id="@+id/collage_gif_item_cover" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+    <ImageView android:id="@+id/collage_gif_download_flag" android:visibility="visible" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginBottom="3dp" android:src="@drawable/editorx_template_download_icon" android:scaleType="centerCrop" android:layout_alignParentBottom="true" android:layout_marginEnd="5dp" android:layout_alignParentEnd="true"/>
+    <View android:id="@+id/layout_choose" android:background="@drawable/editorx_shape_effect_item_bg_noradius_unchoose" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.quvideo.xiaoying.editorx.widget.magic.RoundProgressView android:id="@+id/progress_download" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:backgroundColor="#99020202" app:circleCorner="0dp" app:circleProgress="0" app:startAngle="270"/>
+</RelativeLayout>

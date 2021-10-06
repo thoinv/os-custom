@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="88dp">
+    <Space android:id="@+id/top_space" android:layout_width="match_parent" android:layout_height="8dp"/>
+    <com.quvideo.xiaoying.editorx.widget.magic.RCRelativeLayout android:layout_gravity="start" android:id="@+id/content_layout" android:layout_width="60dp" android:layout_height="80dp" app:round_corner="7dp">
+        <ImageView android:id="@+id/item_cover" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/editorx_bg_source_blur_img" android:scaleType="centerCrop"/>
+        <View android:id="@+id/focus_mask_view" android:background="@drawable/editorx_shape_focus_view_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <include android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/item_cover" android:layout_alignBottom="@+id/item_cover" android:layout_alignStart="@+id/item_cover" android:layout_alignEnd="@+id/item_cover" layout="@layout/editor_bg_ragulator_include_layout"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/veds_color_fill_white_0" android:gravity="center" android:id="@+id/item_title" android:background="@color/color_80514f5a" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/xiaoying_str_blur_background_title" android:layout_below="@+id/item_cover" android:paddingStart="2dp" android:paddingEnd="2dp" app:autoSizeMaxTextSize="@dimen/editorx_template_title_normal_textsize" app:autoSizeMinTextSize="@dimen/editorx_template_title_tiny_textsize" app:autoSizeTextType="1" style="@style/veds_latn_font_body_12"/>
+    </com.quvideo.xiaoying.editorx.widget.magic.RCRelativeLayout>
+</LinearLayout>

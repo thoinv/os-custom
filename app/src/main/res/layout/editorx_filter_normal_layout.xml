@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#141414" android:clickable="true" android:layout_width="match_parent" android:layout_height="194dp">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_filter_filter_indicator" android:layout_width="match_parent" android:layout_height="28dp" android:layout_marginTop="22dp" android:layout_marginStart="16dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_filter_normal_template_store" android:background="@drawable/editorx_shape_store_bg" android:layout_width="40dp" android:layout_height="28dp" android:src="@drawable/editorx_template_store_icon" android:scaleType="center"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_filter_normal_title" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_filter_normal_filter" android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginTop="8dp" android:layout_below="@+id/ll_filter_filter_indicator"/>
+    <FrameLayout android:id="@+id/fl_recent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="110dp" android:layout_marginTop="8dp" android:layout_below="@+id/ll_filter_filter_indicator">
+        <TextView android:textSize="14sp" android:textColor="@color/color_525252" android:gravity="center" android:id="@+id/tv_recent_empty" android:background="@drawable/editorx_shape_recent_layout" android:layout_width="match_parent" android:layout_height="80dp" android:layout_marginTop="30dp" android:text="@string/xiaoying_str_editorx_recent_use" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_filter_normal_recent" android:layout_width="match_parent" android:layout_height="100dp"/>
+    </FrameLayout>
+    <View android:id="@+id/v_loading" android:background="#141414" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.quvideo.xiaoying.editorx.widget.LoadingImageView android:id="@+id/iv_loading" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/editorx_icon_widget_loadding_progress" android:scaleType="center" android:layout_centerInParent="true"/>
+</RelativeLayout>

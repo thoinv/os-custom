@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/audio_trim_layout_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="bottom" android:id="@+id/audio_trim_drawer" android:background="@drawable/editorx_audio_record_bottom_bg_shape" android:layout_width="match_parent" android:layout_height="@dimen/editor_third_view_height_new">
+        <View android:id="@+id/audio_trim_bg_view" android:background="@drawable/editorx_audio_record_chang_voice_shape" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"/>
+        <com.quvideo.xiaoying.xyui.view.CustomHandleView android:id="@+id/audio_trim_title_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:chv_title_text="@string/xiaoying_str_ve_basic_trim_title" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="@+id/audio_trim_bg_view"/>
+        <com.quvideo.xiaoying.timeline.fixed.music.MusicTrimTimelineNew android:id="@+id/audio_trim_time_line" android:layout_width="match_parent" android:layout_height="130dp" android:layout_marginTop="4dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/audio_trim_title_view"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

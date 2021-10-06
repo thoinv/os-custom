@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#141414" android:clickable="true" android:layout_width="match_parent" android:layout_height="194dp">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_filter_special_indicator" android:layout_width="match_parent" android:layout_height="32dp" android:layout_marginLeft="15dp" android:layout_marginTop="28dp" android:layout_marginStart="15dp">
+        <ImageView android:id="@+id/iv_filter_special_template_store" android:background="@drawable/editorx_shape_store_bg" android:layout_width="48dp" android:layout_height="32dp" android:src="@drawable/editorx_template_store_icon" android:scaleType="center"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_filter_special_title" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_filter_special_filter" android:layout_width="match_parent" android:layout_height="100dp" android:layout_below="@+id/ll_filter_special_indicator"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_filter_special_recent" android:layout_width="match_parent" android:layout_height="100dp" android:layout_below="@+id/ll_filter_special_indicator"/>
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/cover_layout_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/cover_bg_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/cover_top_stretch" android:background="@drawable/editorx_cover_top_circle_bg" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHeight_percent="0.875" app:layout_constraintHorizontal_bias="0.125" app:layout_constraintStart_toStartOf="0" app:layout_constraintVertical_bias="0.125">
+        <com.quvideo.xiaoying.xyui.view.CustomHandleView android:id="@+id/cover_top_title" android:layout_width="match_parent" android:layout_height="wrap_content" app:chv_title_text="@string/xiaoying_str_cover_com"/>
+        <com.quvideo.xiaoying.editorx.board.clip.cover.CoverVideoFrameView android:id="@+id/cover_video_frame_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="12dp" android:layout_weight="1"/>
+        <com.quvideo.xiaoying.editorx.board.clip.cover.CoverPhotoView android:id="@+id/cover_photo_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <com.quvideo.xiaoying.editorx.board.clip.cover.CoverPhotoCutView android:id="@+id/cover_photo_cut" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="30dp" android:layout_marginBottom="63dp" android:layout_weight="1"/>
+        <View android:background="@color/color_1c1c1c" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="48dp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/cover_video_frame_btn" android:background="@color/veds_color_bg_black_2" android:layout_width="0dp" android:layout_height="match_parent" app:layout_constraintStart_toStartOf="0" app:layout_constraintWidth_percent="0.5">
+                <ImageView android:id="@+id/cover_video_frame_img" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/editorx_cover_video_frame_selector" android:scaleType="centerCrop"/>
+                <TextView android:textSize="10sp" android:textColor="@drawable/editorx_cover_select_btn_text_color_selector" android:id="@+id/cover_video_frame_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xiaoying_str_video_frame" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:lineSpacingExtra="0sp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/cover_photo_btn" android:background="@color/veds_color_bg_black_2" android:layout_width="0dp" android:layout_height="match_parent" app:layout_constraintEnd_toEndOf="0" app:layout_constraintWidth_percent="0.5">
+                <ImageView android:id="@+id/cover_photo_img" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/editorx_cover_photo_selector"/>
+                <TextView android:textSize="10sp" android:textColor="@drawable/editorx_cover_select_btn_text_color_selector" android:id="@+id/cover_photo_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xiaoying_effect_collage_album" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:lineSpacingExtra="0sp"/>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

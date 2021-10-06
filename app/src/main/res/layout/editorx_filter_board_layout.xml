@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="@dimen/editor_third_view_height">
+        <RelativeLayout android:id="@+id/rl_bar" android:background="@color/veds_color_bg_black_4" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="44dp" android:layout_alignParentBottom="true">
+            <TextView android:textColor="@color/veds_color_fill_white_3" android:id="@+id/tv_bar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/xiaoying_str_edit_use_text" android:layout_centerVertical="true" android:layout_marginStart="15dp" style="@style/veds_latn_font_subtitle_10"/>
+            <RelativeLayout android:id="@+id/rl_bar_current" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginStart="16dp" android:layout_toEndOf="@+id/tv_bar_title">
+                <TextView android:textColor="@drawable/editorx_selector_filter_clip_txt_color" android:gravity="center" android:id="@+id/tv_current_clip" android:background="@drawable/editorx_select_filter_clip_tab" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="24dp" android:text="@string/xiaoying_str_creator_now_clip" android:layout_centerVertical="true" style="@style/veds_latn_font_subtitle_10"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_bar_all" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginStart="4dp" android:layout_toEndOf="@+id/rl_bar_current">
+                <TextView android:textColor="@drawable/editorx_selector_filter_clip_txt_color" android:gravity="center" android:id="@+id/tv_all_clip" android:background="@drawable/editorx_select_filter_clip_tab" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="24dp" android:text="@string/xiaoying_str_creator_all_clip" android:layout_centerVertical="true" style="@style/veds_latn_font_subtitle_10"/>
+            </RelativeLayout>
+            <ImageView android:id="@+id/iv_bar_done" android:background="@drawable/editorx_shape_effect_bg_choose_finish" android:layout_width="48dp" android:layout_height="28dp" android:src="@drawable/editorx_icon_effect_choose_finish_2" android:scaleType="centerInside" android:layout_centerVertical="true" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_children" android:background="@color/color_141414" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="44dp"/>
+        <RelativeLayout android:id="@+id/rl_tittle_text" android:background="@color/color_141414" android:layout_width="match_parent" android:layout_height="48dp">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_tittle_text" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true">
+                <TextView android:textColor="@drawable/editorx_selector_filter_tab_title" android:gravity="center" android:id="@+id/tv_normal_filter" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/xiaoying_str_normal_filter_title" android:layout_weight="1" style="@style/veds_latn_font_subtitle_14"/>
+                <TextView android:textColor="@drawable/editorx_selector_filter_tab_title" android:gravity="center" android:id="@+id/tv_specific_filter" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/xiaoying_str_specific_filter_title" android:layout_weight="1" style="@style/veds_latn_font_subtitle_14"/>
+                <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textColor="@drawable/editorx_selector_filter_tab_title" android:gravity="center" android:id="@+id/tv_param_adjust" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xiaoying_str_param_adjust_title" android:layout_centerInParent="true" style="@style/veds_latn_font_subtitle_14"/>
+                    <ImageView android:id="@+id/iv_vip_icon" android:layout_width="wrap_content" android:layout_height="12dp" android:layout_marginTop="-6dp" android:layout_alignTop="@+id/tv_param_adjust" android:layout_marginEnd="-10dp" android:layout_alignEnd="@+id/tv_param_adjust"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:id="@+id/v_three_tab_indicator" android:background="@drawable/editorx_filter_shape_tab_indicator" android:layout_width="8dp" android:layout_height="2dp" android:layout_marginBottom="8dp" android:layout_alignParentBottom="true"/>
+            <View android:background="#242424" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

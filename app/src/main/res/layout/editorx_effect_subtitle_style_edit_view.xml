@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/rlSubtitle" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="120dp">
+    <LinearLayout android:orientation="vertical" android:id="@+id/move_view" android:background="@color/color_141414" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="192dp" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@+id/layout_input" android:background="@color/color_212121" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="50dp">
+            <EditText android:textSize="14sp" android:textColor="@color/white" android:textColorHint="@color/opacity_3_white" android:id="@+id/subtitle_edittext" android:background="@drawable/editorx_shape_effect_subtitle_input" android:paddingTop="10dp" android:paddingBottom="10dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:maxLength="247" android:paddingStart="12dp" android:paddingEnd="36dp" android:layout_marginStart="12dp" android:layout_marginEnd="12dp" android:layout_toStartOf="@+id/layout_choose_finish"/>
+            <View android:id="@+id/view_edit" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="12dp" android:layout_marginEnd="12dp" android:layout_toStartOf="@+id/layout_choose_finish"/>
+            <ImageView android:id="@+id/text_delete" android:padding="4dp" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/editorx_icon_text_delete" android:layout_centerVertical="true" android:layout_marginEnd="20dp" android:layout_toStartOf="@+id/layout_choose_finish"/>
+            <RelativeLayout android:id="@+id/layout_choose_finish" android:background="@drawable/editorx_shape_effect_bg_choose_finish" android:layout_width="48dp" android:layout_height="28dp" android:layout_centerVertical="true" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true">
+                <ImageView android:id="@+id/iv_choose_finish" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/editorx_icon_effect_choose_finish" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="@color/color_212121" android:layout_width="match_parent" android:layout_height="48dp">
+            <com.quvideo.xiaoying.editorx.board.effect.ui.SimpleIconView android:id="@+id/siv_store" android:layout_width="48dp" android:layout_height="32dp" android:layout_marginStart="3dp" app:simple_drawable="@drawable/editorx_icon_subtitle_tab_store"/>
+            <View android:id="@+id/view_line" android:background="@color/color_33e6e6e6" android:layout_width="1dp" android:layout_height="16dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:visibility="gone" android:layout_width="0dp" android:layout_height="32dp" android:layout_weight="1">
+                    <com.quvideo.xiaoying.editorx.board.effect.ui.SimpleIconView android:id="@+id/siv_keyboard" android:visibility="gone" android:layout_width="48dp" android:layout_height="32dp" android:layout_centerInParent="true" android:layout_marginStart="4dp" android:layout_marginEnd="4dp" app:simple_drawable="@drawable/editorx_icon_subtitle_tab_key"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="0dp" android:layout_height="32dp" android:layout_weight="1">
+                    <com.quvideo.xiaoying.editorx.board.effect.ui.SimpleIconView android:id="@+id/siv_color" android:layout_width="48dp" android:layout_height="32dp" android:layout_centerInParent="true" android:layout_marginStart="4dp" android:layout_marginEnd="4dp" app:simple_drawable="@drawable/editorx_icon_subtitle_tab_color"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="0dp" android:layout_height="32dp" android:layout_weight="1">
+                    <com.quvideo.xiaoying.editorx.board.effect.ui.SimpleIconView android:id="@+id/siv_font" android:layout_width="48dp" android:layout_height="32dp" android:layout_centerInParent="true" android:layout_marginStart="4dp" android:layout_marginEnd="4dp" app:simple_drawable="@drawable/editorx_icon_subtitle_tab_font"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="0dp" android:layout_height="32dp" android:layout_weight="1">
+                    <com.quvideo.xiaoying.editorx.board.effect.ui.SimpleIconView android:id="@+id/siv_animation" android:layout_width="48dp" android:layout_height="32dp" android:layout_centerInParent="true" android:layout_marginStart="4dp" android:layout_marginEnd="4dp" app:simple_drawable="@drawable/editorx_effect_font_ani"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="0dp" android:layout_height="32dp" android:layout_weight="1">
+                    <com.quvideo.xiaoying.editorx.board.effect.ui.SimpleIconView android:id="@+id/siv_other" android:layout_width="48dp" android:layout_height="32dp" android:layout_centerInParent="true" android:layout_marginStart="4dp" android:layout_marginEnd="4dp" app:simple_drawable="@drawable/editorx_icon_subtitle_tab_more"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/layout_style_board" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true">
+        <com.quvideo.xiaoying.editorx.board.effect.subtitle.tabview.color.SubtitleColorEditView android:id="@+id/color_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.quvideo.xiaoying.editorx.board.effect.subtitle.tabview.font.FontView android:id="@+id/font_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.quvideo.xiaoying.editorx.board.effect.subtitle.tabview.animation.AnimationView android:id="@+id/animation_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.quvideo.xiaoying.editorx.board.effect.subtitle.tabview.more.MoreView android:id="@+id/more_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+</RelativeLayout>

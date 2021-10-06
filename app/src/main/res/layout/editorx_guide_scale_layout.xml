@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/gv_scale_layout" android:visibility="invisible" android:layout_width="134dp" android:layout_height="134dp" android:layout_alignParentLeft="true">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/gv_scale_first_img" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/editorx_guide_scale_first_img" android:scaleType="centerCrop"/>
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/gv_scale_second_img" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/editorx_guide_scale_second_img" android:scaleType="centerCrop"/>
+</FrameLayout>

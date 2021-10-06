@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.quvideo.xiaoying.editorx.facebook.component.SpeedSelectorView android:id="@+id/speed_selector_view" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="100dp"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_withdraw_container" android:background="#cc000000" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textColor="@color/veds_color_fill_white_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xiaoying_str_fb_editor_curve_speed_changed" style="@style/veds_latn_font_body_12"/>
+        <ImageView android:id="@+id/iv_withdraw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:src="@drawable/editorx_fb_story_curve_speed_withdraw_icon"/>
+    </LinearLayout>
+</FrameLayout>

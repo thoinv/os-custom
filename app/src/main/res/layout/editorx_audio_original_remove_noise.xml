@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/editorx_audio_original_noise_remove_bg" android:layout_width="match_parent" android:layout_height="56dp" android:paddingStart="28dp" android:paddingEnd="28dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+        <TextView android:textColor="@color/veds_color_fill_white_1" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/xiaoying_str_ve_edit_denoise" android:layout_weight="1" style="@style/veds_latn_font_subtitle_16"/>
+        <Switch android:gravity="center_vertical" android:id="@+id/switch_remove_noise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:thumb="@drawable/editorx_selector_switch_thumb" android:track="@drawable/editorx_selector_switch_track"/>
+    </LinearLayout>
+</FrameLayout>

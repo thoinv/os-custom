@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/item_layout" android:background="@drawable/editorx_shape_effect_item_bg_unchoose" android:layout_width="72dp" android:layout_height="72dp">
+    <com.quvideo.mobile.component.imageview.DynamicLoadingImageView android:id="@+id/div_roll_thumb" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" app:roundedCornerRadius="8dp"/>
+    <com.quvideo.xiaoying.xyui.view.CMItemSelectView android:id="@+id/select_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:cms_first_stroke_color="@color/veds_color_fill_orange_50" app:cms_first_stroke_radius="8dp" app:cms_first_stroke_width="3dp" app:cms_second_stroke_color="@color/veds_color_bg_black_1" app:cms_second_stroke_width="6dp" app:cms_solid_color="@color/veds_color_bg_label_70"/>
+    <ImageView android:id="@+id/iv_download" android:visibility="gone" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/editorx_text_typeface_download_icon"/>
+    <ImageView android:id="@+id/iv_vip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:src="@drawable/editorx_icon_font_vip" android:layout_marginEnd="4dp" android:layout_alignParentEnd="true"/>
+    <RelativeLayout android:id="@+id/rl_progress" android:background="@color/color_66121212" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:id="@+id/progress_bar" android:layout_width="48dp" android:layout_height="2dp" android:layout_marginBottom="8dp" android:progressDrawable="@drawable/progress_horizontal_bg" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="?android:attr/progressBarStyleHorizontal"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/layoutRefresh" android:background="@color/color_A6020202" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/editorx_effect_subtitle_more" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

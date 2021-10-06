@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_root" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/editorx_bottom_bar_margin">
+        <HorizontalScrollView android:id="@+id/layoutScroll" android:background="@color/black" android:scrollbars="none" android:clickable="true" android:layout_width="match_parent" android:layout_height="68dp" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@+id/layout_effect" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="68dp" android:paddingStart="28dp">
+                <com.quvideo.xiaoying.editorx.board.effect.ui.SimpleIconTextView android:layout_gravity="bottom" android:id="@+id/sitv_subtitle" android:layout_width="64dp" android:layout_height="match_parent" app:sitv_bottom_text="@string/xiaoying_str_ve_subtitle_title" app:sitv_top_drawable="@drawable/editorx_icon_effect_subtitle"/>
+                <com.quvideo.xiaoying.editorx.board.effect.ui.SimpleIconTextView android:layout_gravity="bottom" android:id="@+id/sitv_speech" android:visibility="gone" android:layout_width="64dp" android:layout_height="match_parent" app:sitv_bottom_text="字幕识别" app:sitv_top_drawable="@drawable/editorx_ico_speech"/>
+                <com.quvideo.xiaoying.editorx.board.effect.ui.SimpleIconTextView android:id="@+id/sitv_sticker" android:layout_width="64dp" android:layout_height="match_parent" app:sitv_bottom_text="@string/xiaoying_str_editor_sticker_title" app:sitv_top_drawable="@drawable/editorx_icon_effect_sticker"/>
+                <com.quvideo.xiaoying.editorx.board.effect.ui.SimpleIconTextView android:id="@+id/sitv_fx" android:layout_width="64dp" android:layout_height="match_parent" app:sitv_bottom_text="@string/xiaoying_str_ve_animate_frame_title" app:sitv_top_drawable="@drawable/editorx_icon_effect_fx"/>
+                <com.quvideo.xiaoying.editorx.board.effect.ui.SimpleIconTextView android:id="@+id/sitv_mosaic" android:layout_width="64dp" android:layout_height="match_parent" app:sitv_bottom_text="@string/xiaoying_str_ve_mosaic_title" app:sitv_top_drawable="@drawable/editorx_icon_effect_mosaic"/>
+                <com.quvideo.xiaoying.editorx.board.effect.ui.SimpleIconTextView android:id="@+id/sitv_collage" android:layout_width="64dp" android:layout_height="match_parent" app:sitv_bottom_text="@string/xiaoying_str_com_home_edit_pip" app:sitv_top_drawable="@drawable/editorx_icon_effect_collage"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/sub_add_btn" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginBottom="24dp" android:src="@drawable/editorx_operate_plus_btn" android:layout_alignParentBottom="true" android:layout_marginStart="15dp"/>
+    </RelativeLayout>
+</RelativeLayout>

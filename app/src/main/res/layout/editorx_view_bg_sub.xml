@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="bottom" android:id="@+id/content_layout" android:clickable="true" android:layout_width="match_parent" android:layout_height="286dp">
+        <com.quvideo.xiaoying.xyui.view.CustomHandleView android:id="@+id/handle_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:chv_title_text="@string/xiaoying_str_edit_clip_page_background_title" app:layout_constraintTop_toTopOf="0"/>
+        <View android:background="@color/veds_color_bg_black_3" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/handle_view"/>
+        <com.quvideo.xiaoying.editorx.board.clip.bg.widget.MagicBGSourceLayout android:id="@+id/magic_layout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="16dp" app:layout_constraintBottom_toTopOf="@+id/checkbox_layout" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/handle_view"/>
+        <FrameLayout android:id="@+id/checkbox_layout" android:background="@drawable/editorx_shape_checkbox_bg" android:paddingLeft="8dp" android:paddingTop="6dp" android:paddingRight="8dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0">
+            <CheckBox android:id="@+id/checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xiaoying_str_creator_all_clip" android:paddingStart="5dp" android:paddingEnd="0dp" style="@style/AllCheckboxTheme"/>
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

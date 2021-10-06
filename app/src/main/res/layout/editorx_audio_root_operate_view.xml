@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/root_operate_layout" android:background="@color/color_eb121212" android:layout_width="match_parent" android:layout_height="64dp">
+        <com.quvideo.xiaoying.editorx.board.effect.ui.SimpleIconTextView android:id="@+id/root_operate_ori" android:layout_width="64dp" android:layout_height="match_parent" android:layout_marginLeft="47dp" app:sitv_bottom_text="@string/xiaoying_str_video_voice" app:sitv_top_drawable="@drawable/editorx_audio_root_operate_ori_icon"/>
+        <View android:layout_gravity="center_vertical" android:id="@+id/root_operate_line" android:background="@color/color_212121" android:layout_width="1dp" android:layout_height="32dp" android:layout_marginLeft="12dp"/>
+        <com.quvideo.xiaoying.editorx.board.effect.ui.SimpleIconTextView android:id="@+id/root_operate_bgm" android:layout_width="64dp" android:layout_height="match_parent" android:layout_marginLeft="12dp" app:sitv_bottom_text="@string/xiaoying_str_ve_music_title" app:sitv_top_drawable="@drawable/editorx_audio_root_operate_bgm_icon"/>
+        <com.quvideo.xiaoying.editorx.board.effect.ui.SimpleIconTextView android:id="@+id/root_operate_ef" android:layout_width="64dp" android:layout_height="match_parent" app:sitv_bottom_text="@string/xiaoying_str_ve_dub_add_sound_effect_btn_title" app:sitv_top_drawable="@drawable/editorx_audio_root_operate_effect_music"/>
+        <com.quvideo.xiaoying.editorx.board.effect.ui.SimpleIconTextView android:id="@+id/root_operate_record" android:layout_width="64dp" android:layout_height="match_parent" app:sitv_bottom_text="@string/editor_effect_dub_record_title" app:sitv_top_drawable="@drawable/editorx_audio_root_operate_record"/>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@+id/root_operate_plus_btn" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="15dp" android:src="@drawable/editorx_operate_plus_btn" android:scaleType="fitXY"/>
+</merge>

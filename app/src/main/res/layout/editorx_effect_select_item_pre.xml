@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/editorx_shape_effect_item_bg_unchoose" android:layout_width="76dp" android:layout_height="76dp">
+    <RelativeLayout android:id="@+id/item_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/iv_download" android:visibility="gone" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginTop="4dp" android:src="@drawable/editorx_template_download_icon" android:layout_marginStart="4dp"/>
+        <com.quvideo.mobile.component.imageview.DynamicLoadingImageView android:id="@+id/div_roll_thumb" android:background="@color/transparent" android:layout_width="56dp" android:layout_height="56dp" android:layout_centerInParent="true" app:roundedCornerRadius="2dp"/>
+        <com.quvideo.xiaoying.xyui.view.CMItemSelectView android:id="@+id/select_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:cms_first_stroke_color="@color/veds_color_fill_orange_50" app:cms_first_stroke_radius="8dp" app:cms_first_stroke_width="3dp" app:cms_second_stroke_color="@color/veds_color_bg_black_1" app:cms_second_stroke_width="6dp" app:cms_solid_color="@color/veds_color_bg_label_70"/>
+        <com.quvideo.xiaoying.editorx.widget.magic.RoundProgressView android:id="@+id/progress_download" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:backgroundColor="#99020202" app:circleCorner="0dp" app:circleProgress="0" app:circleRadius="50dp" app:startAngle="270"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/layoutMore" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/ivMore" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="24dp" android:src="@drawable/editorx_effect_subtitle_more" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="14sp" android:textColor="@color/color_e6e6e6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xiaoying_str_studio_sns_more" android:layout_below="@+id/ivMore" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

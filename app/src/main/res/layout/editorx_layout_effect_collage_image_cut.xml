@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/color_141414" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="48.5dp" android:layout_alignParentBottom="true">
+        <View android:background="@color/color_242424" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:id="@+id/layout_double_back" android:background="@drawable/editorx_shape_effect_main_back" android:visibility="visible" android:layout_width="28dp" android:layout_height="40dp" android:layout_marginStart="15dp">
+                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/editorx_ico_second_double_back" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <com.quvideo.xiaoying.editorx.board.effect.ui.SimpleIconTextView android:id="@+id/sitv_color" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" app:sitv_bottom_text="@string/xiaoying_str_effect_filter_color" app:sitv_top_drawable="@drawable/editorx_image_cut_color_unchoose"/>
+            <com.quvideo.xiaoying.editorx.board.effect.ui.SimpleIconTextView android:id="@+id/sitv_precision" android:layout_width="wrap_content" android:layout_height="match_parent" app:sitv_bottom_text="@string/xiaoying_str_effect_filter_color_precision" app:sitv_top_text="20" app:sitv_top_text_color="@drawable/editorx_selector_sitv_text_color2" app:sitv_top_type="1"/>
+            <com.quvideo.xiaoying.editorx.board.effect.ui.SimpleIconTextView android:id="@+id/sitv_reset_image" android:layout_width="wrap_content" android:layout_height="match_parent" app:sitv_bottom_text="@string/xiaoying_str_edit_reset_text" app:sitv_top_drawable="@drawable/editorx_ico_effect_reset"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

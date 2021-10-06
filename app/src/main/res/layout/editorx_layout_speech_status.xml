@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:id="@+id/layoutStatus" android:background="@drawable/editorx_speech_status_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="12dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layoutSpeechIng" android:layout_width="match_parent" android:layout_height="48dp">
+        <RelativeLayout android:layout_width="16dp" android:layout_height="16dp">
+            <ImageView android:id="@+id/ivAnimOut" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/editorx_ico_speeching_anim_out"/>
+            <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/editorx_ico_speeching_anim_content"/>
+        </RelativeLayout>
+        <TextView android:textColor="@color/veds_color_fill_white_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xiaoying_str_speech_to_text_speeching" android:layout_marginStart="8dp" style="@style/veds_latn_font_subtitle_14"/>
+        <View android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <TextView android:textStyle="bold" android:textColor="@color/veds_color_fill_white_1" android:gravity="center" android:id="@+id/tvCancel" android:background="@drawable/editorx_shape_speech_cancel" android:layout_width="wrap_content" android:layout_height="28dp" android:text="@string/xiaoying_str_com_cancel" android:paddingStart="12dp" android:paddingEnd="12dp" style="@style/veds_latn_font_button_14"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layoutSpeechFailure" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60dp">
+        <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/editorx_ico_speech_failed"/>
+        <TextView android:textColor="@color/veds_color_fill_red_50" android:layout_width="105dp" android:layout_height="wrap_content" android:text="@string/xiaoying_str_speech_to_text_speech_failed" android:layout_marginStart="8dp" style="@style/veds_latn_font_subtitle_14"/>
+        <View android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <TextView android:textColor="@color/veds_color_fill_white_0" android:gravity="center" android:id="@+id/tvRetry" android:background="@drawable/editorx_shape_speech_retry" android:layout_width="wrap_content" android:layout_height="28dp" android:layout_marginRight="8dp" android:text="@string/xiaoying_str_studio_share_retry_title" android:paddingStart="12dp" android:paddingEnd="12dp" style="@style/veds_latn_font_button_14"/>
+        <TextView android:textColor="@color/veds_color_fill_white_1" android:gravity="center" android:id="@+id/tvCancel2" android:background="@drawable/editorx_shape_speech_cancel" android:layout_width="wrap_content" android:layout_height="28dp" android:text="@string/xiaoying_str_com_cancel" android:paddingStart="12dp" android:paddingEnd="12dp" style="@style/veds_latn_font_button_14"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/layoutSpeechSuccess" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp">
+        <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_round_selected"/>
+        <TextView android:textColor="@color/veds_color_fill_orange_50" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xiaoying_str_speech_to_text_speech_add_success" android:layout_marginStart="8dp" style="@style/veds_latn_font_subtitle_14"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/layoutSpeechNoSound" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp">
+        <TextView android:textColor="@color/veds_color_fill_red_50" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xiaoying_str_speech_to_text_no_people_sounds" android:layout_marginStart="8dp" style="@style/veds_latn_font_subtitle_14"/>
+    </LinearLayout>
+</FrameLayout>

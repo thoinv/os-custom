@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_custom" android:layout_width="20dp" android:layout_height="24dp" android:src="@drawable/editorx_custom_color" android:layout_marginStart="24dp"/>
+    <RelativeLayout android:id="@+id/rl_foreground" android:visibility="invisible" android:layout_width="14dp" android:layout_height="24dp" android:layout_marginStart="4dp" android:layout_marginEnd="8dp">
+        <ImageView android:id="@+id/iv_foreground" android:layout_width="14dp" android:layout_height="24dp"/>
+        <ImageView android:id="@+id/iv_foreground_border" android:background="@drawable/editorx_bg_color_select" android:layout_width="14dp" android:layout_height="24dp"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="24dp">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_color_select" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+        <View android:id="@+id/left_shadow" android:background="@drawable/editorx_bg_color_select_shadow_left" android:layout_width="64dp" android:layout_height="24dp"/>
+        <View android:id="@+id/right_shadow" android:background="@drawable/editorx_bg_color_select_shadow_right" android:layout_width="64dp" android:layout_height="24dp" android:layout_alignParentRight="true"/>
+        <RelativeLayout android:id="@+id/rl_select_color" android:visibility="gone" android:layout_width="20dp" android:layout_height="24dp" android:layout_centerHorizontal="true">
+            <ImageView android:id="@+id/iv_selected" android:visibility="gone" android:layout_width="19dp" android:layout_height="21dp" android:layout_centerInParent="true"/>
+            <RelativeLayout android:background="@drawable/editorx_bg_color_selected" android:layout_width="20dp" android:layout_height="24dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

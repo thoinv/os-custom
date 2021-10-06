@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <SurfaceView android:id="@+id/surface_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.quvideo.xiaoying.editorx.board.effect.fake.FakeEngineLayer android:id="@+id/fake_engine_layer" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:id="@+id/iv_play" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="15dp" android:layout_marginBottom="16dp" android:src="@drawable/editorx_player_play" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

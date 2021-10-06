@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/color_363636" android:layout_width="48dp" android:layout_height="32dp">
+    <ImageView android:id="@+id/image_view" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/editorx_icon_effect_store" android:layout_centerInParent="true"/>
+</merge>

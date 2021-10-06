@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layoutDirection="ltr">
+
+    <RelativeLayout
+        android:id="@+id/layout_preview_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_101010">
+
+        <RelativeLayout
+            android:id="@+id/preview_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@color/transparent">
+
+            <SurfaceView
+                android:id="@+id/video_editor_preview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/preview_layout_fake"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_play"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginBottom="6dp"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:padding="6dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/editor_selector_video_play_icon"
+            android:visibility="gone" />
+
+        <com.quvideo.xiaoying.editor.widget.WatermarkView
+            android:id="@+id/btn_purchase_remove_watermark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/preview_layout"
+            android:layout_alignRight="@+id/preview_layout"
+            android:layout_alignBottom="@+id/preview_layout"
+            android:layout_marginBottom="10dp"
+            android:background="@color/transparent"
+            android:contentDescription="@null"
+            android:padding="4dp"
+            android:src="@drawable/xiaoying_purchase_watermark"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.quvideo.xiaoying.editor.effects.WatermarkFakerView
+        android:id="@+id/simple_watermark_player_faker_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/editor_ops_board_normal_height"
+        android:visibility="gone" />
+
+    <ViewStub
+        android:id="@+id/player_seek_view_stub"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/layout_preview_background"
+        android:layout_marginBottom="-20dp"
+        android:layout="@layout/editor_preview_player_seek_layout" />
+
+    <include
+        layout="@layout/editor_fine_tunning_time_layout"
+        android:layout_width="@dimen/xiaoying_fine_tunning_time_layout_width"
+        android:layout_height="@dimen/xiaoying_fine_tunning_time_layout_height"
+        android:layout_alignTop="@+id/layout_preview_background"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+</RelativeLayout>

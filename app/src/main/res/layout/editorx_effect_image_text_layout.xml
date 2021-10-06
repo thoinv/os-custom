@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/itv_top_circle_view" android:background="@drawable/editorx_shape_imgae_text_view" android:layout_width="48dp" android:layout_height="48dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <ImageView android:id="@+id/itv_top_iv" android:layout_width="24dp" android:layout_height="24dp" android:scaleType="fitXY" app:layout_constraintBottom_toBottomOf="@+id/itv_top_circle_view" app:layout_constraintEnd_toEndOf="@+id/itv_top_circle_view" app:layout_constraintStart_toStartOf="@+id/itv_top_circle_view" app:layout_constraintTop_toTopOf="@+id/itv_top_circle_view"/>
+    <TextView android:textSize="12dp" android:textStyle="bold" android:id="@+id/itv_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/itv_top_circle_view"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

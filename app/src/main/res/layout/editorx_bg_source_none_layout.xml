@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="88dp">
+    <Space android:id="@+id/top_space" android:layout_width="match_parent" android:layout_height="8dp"/>
+    <com.quvideo.xiaoying.editorx.widget.magic.RCRelativeLayout android:layout_gravity="start" android:id="@+id/content_layout" android:layout_width="60dp" android:layout_height="80dp" app:round_corner="7dp">
+        <View android:background="@color/color_0a0a0a" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <View android:id="@+id/focus_mask_view_none" android:background="@drawable/editorx_shape_focus_view_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textColor="@color/veds_color_fill_white_0" android:gravity="center" android:background="@color/color_363636" android:layout_width="match_parent" android:layout_height="20dp" android:text="@string/xiaoying_str_ve_template_empty_title" android:layout_alignParentBottom="true" style="@style/veds_latn_font_body_12"/>
+    </com.quvideo.xiaoying.editorx.widget.magic.RCRelativeLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="#b3000000" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.quvideo.xiaoying.editorx.facebook.component.RoundProgressBar android:id="@+id/round_progress_bar" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginBottom="16dp" app:layout_constraintBottom_toTopOf="@+id/tv_progress" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"/>
+        <TextView android:textColor="@color/veds_color_fill_white_1" android:id="@+id/tv_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0%" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/veds_latn_font_headline_20"/>
+        <TextView android:textColor="@color/veds_color_fill_white_2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/xiaoying_str_ve_fb_export_desc" android:textAlignment="center" android:layout_marginStart="32dp" android:layout_marginEnd="32dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/tv_progress" style="@style/veds_latn_font_body_14"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

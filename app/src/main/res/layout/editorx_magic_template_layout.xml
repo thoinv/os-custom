@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="@dimen/editor_board_whole_height">
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/theme_category_layout" android:layout_width="match_parent" android:layout_height="40dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ops_layout" android:layout_width="wrap_content" android:layout_height="28dp" android:layout_centerVertical="true">
+            <ImageButton android:layout_gravity="center_vertical" android:id="@+id/btn_store" android:background="@drawable/editorx_shape_store_bg" android:layout_width="40dp" android:layout_height="28dp" android:src="@drawable/editorx_template_store_icon" android:contentDescription="@null" android:layout_marginStart="16dp"/>
+        </LinearLayout>
+        <com.quvideo.xiaoying.xyui.magicindicator.MagicIndicator android:id="@+id/magic_indicator" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toRightOf="@+id/ops_layout" android:layout_toEndOf="@+id/ops_layout"/>
+    </RelativeLayout>
+    <com.quvideo.xiaoying.editorx.widget.magic.MagicRecyclerView android:id="@+id/magic_recyclerView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="18dp" android:layout_below="@+id/theme_category_layout"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recent_recyclerView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="18dp" android:layout_below="@+id/theme_category_layout"/>
+    <TextView android:textSize="14sp" android:textColor="@color/veds_color_fill_white_4" android:gravity="center" android:layout_gravity="center" android:id="@+id/recent_empty" android:background="@drawable/editorx_shape_recent_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="30dp" android:layout_marginBottom="34dp" android:text="@string/xiaoying_str_editorx_recent_use" android:layout_below="@+id/theme_category_layout" android:layout_marginStart="15dp" android:layout_marginEnd="15dp" style="@style/veds_latn_font_body_14"/>
+</RelativeLayout>

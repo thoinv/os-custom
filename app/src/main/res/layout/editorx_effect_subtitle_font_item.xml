@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:id="@+id/rl_font_item_layout" android:background="@drawable/editorx_shape_effect_font_item_bg_unchoose" android:layout_width="match_parent" android:layout_height="40dp">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/layout_local" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/iv_add" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/editorx_icon_subtitle_font_add"/>
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/color_e6e6e6" android:id="@+id/tv_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/editorx_effect_add_font" android:layout_marginStart="4dp"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/rl_subtitle_font_item_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:minWidth="120dp" android:layout_centerInParent="true">
+        <TextView android:textSize="17sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/tv_font_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="120dp" android:singleLine="true" android:layout_centerInParent="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_font_item" android:layout_width="99dp" android:layout_height="20dp" android:layout_centerInParent="true" android:layout_centerVertical="true" android:alpha="20" android:layout_marginStart="5dp"/>
+        <ImageView android:id="@+id/iv_font_download_flag" android:visibility="gone" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/editorx_template_download_icon" android:layout_centerVertical="true" android:layout_marginStart="8dp" android:layout_toEndOf="@+id/iv_font_item" android:layout_alignParentStart="true"/>
+        <ImageView android:id="@+id/iv_vip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/editorx_icon_font_vip" android:layout_centerVertical="true" android:layout_marginEnd="8dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <com.quvideo.xiaoying.editorx.widget.magic.RoundProgressView android:id="@+id/progress_download" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:backgroundColor="#99020202" app:circleCorner="0dp" app:circleProgress="0" app:circleRadius="90dp" app:startAngle="270"/>
+    <RelativeLayout android:id="@+id/layoutRefresh" android:background="@color/color_A6020202" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/editorx_effect_subtitle_more" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>
