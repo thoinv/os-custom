@@ -1,6 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="match_parent">
-    <com.quvideo.mobile.component.imageview.XYImageView android:id="@+id/viewBg" android:background="@color/veds_color_fill_white_4" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:roundedCornerRadius="4dp"/>
-    <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/editorx_sel_ratio_text" android:gravity="center" android:id="@+id/tvRatio" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:drawablePadding="4dp" app:layout_constraintBottom_toBottomOf="@+id/viewBg" app:layout_constraintEnd_toEndOf="@+id/viewBg" app:layout_constraintStart_toStartOf="@+id/viewBg" app:layout_constraintTop_toTopOf="@+id/viewBg"/>
-    <com.quvideo.xiaoying.xyui.RoundedRelativeLayout android:id="@+id/ivFoucs" android:visibility="gone" android:layout_width="0dp" android:layout_height="0dp" app:VS_CornerRadius="4dp" app:VS_StrokeColor="@color/veds_color_fill_orange_50" app:VS_StrokeWidth="2dp" app:layout_constraintBottom_toBottomOf="@+id/viewBg" app:layout_constraintEnd_toEndOf="@+id/viewBg" app:layout_constraintStart_toStartOf="@+id/viewBg" app:layout_constraintTop_toTopOf="@+id/viewBg"/>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <com.quvideo.mobile.component.imageview.XYImageView
+        android:id="@+id/viewBg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/veds_color_fill_white_4"
+        app:layout_constraintBottom_toBottomOf="0"
+        app:layout_constraintEnd_toEndOf="0"
+        app:layout_constraintStart_toStartOf="0"
+        app:roundedCornerRadius="4dp" />
+
+    <TextView
+        android:id="@+id/tvRatio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:drawablePadding="4dp"
+        android:gravity="center"
+        android:textColor="@color/editorx_sel_ratio_text"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/viewBg"
+        app:layout_constraintEnd_toEndOf="@+id/viewBg"
+        app:layout_constraintStart_toStartOf="@+id/viewBg"
+        app:layout_constraintTop_toTopOf="@+id/viewBg" />
+
+    <com.quvideo.xiaoying.xyui.RoundedRelativeLayout
+        android:id="@+id/ivFoucs"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:VS_CornerRadius="4dp"
+        app:VS_StrokeColor="@color/veds_color_fill_orange_50"
+        app:VS_StrokeWidth="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewBg"
+        app:layout_constraintEnd_toEndOf="@+id/viewBg"
+        app:layout_constraintStart_toStartOf="@+id/viewBg"
+        app:layout_constraintTop_toTopOf="@+id/viewBg" />
 </androidx.constraintlayout.widget.ConstraintLayout>

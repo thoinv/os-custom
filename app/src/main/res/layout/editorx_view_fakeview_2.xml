@@ -1,11 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
-    <RelativeLayout android:id="@+id/editor_fake_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
-        <RelativeLayout android:id="@+id/auxiliary_line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
-            <View android:id="@+id/left_hori" android:background="@color/color_ff203d" android:layout_width="50dp" android:layout_height="0.5dp" android:layout_centerVertical="true"/>
-            <View android:id="@+id/right_hori" android:background="@color/color_ff203d" android:layout_width="50dp" android:layout_height="0.5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
-            <View android:id="@+id/top_verti" android:background="@color/color_ff203d" android:layout_width="0.5dp" android:layout_height="50dp" android:layout_centerHorizontal="true"/>
-            <View android:id="@+id/bottom_verti" android:background="@color/color_ff203d" android:layout_width="0.5dp" android:layout_height="50dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/editor_fake_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:id="@+id/auxiliary_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <View
+                android:id="@+id/left_hori"
+                android:layout_width="50dp"
+                android:layout_height="0.5dp"
+                android:layout_centerVertical="true"
+                android:background="@color/color_ff203d" />
+
+            <View
+                android:id="@+id/right_hori"
+                android:layout_width="50dp"
+                android:layout_height="0.5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/color_ff203d" />
+
+            <View
+                android:id="@+id/top_verti"
+                android:layout_width="0.5dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/color_ff203d" />
+
+            <View
+                android:id="@+id/bottom_verti"
+                android:layout_width="0.5dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/color_ff203d" />
         </RelativeLayout>
     </RelativeLayout>
 </RelativeLayout>
